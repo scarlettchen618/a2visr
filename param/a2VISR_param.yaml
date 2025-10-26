@@ -1,0 +1,85 @@
+#########################################################################
+#        Set parameters carefully for satisfied performance!           #
+#########################################################################
+
+# param for MAP sliding window
+mapwin:
+      delta: 3  
+      lopt: 8       #window lenth
+      order: 3      #order
+      k: 1          #
+      rate: 25      #hz
+      init_num: 10  # start num = init_num * lopt
+      vicon_flag: 0 # 1 for run with vicon / 0 for run with sensor data
+      param_flag: 1 # 1 for run with vicon / 0 for run with param init data
+
+# param for dwe_param
+dwe_param:
+      #clear
+      paramPp: 0.1       #P  - x0
+      paramPv: 0.1       #P  - x0
+      paramQp: 1.0       #Q  - imu
+      paramQv: 1.0       #Q  - imu
+      paramR: 1.0        #R  - uwb
+      paramU: 1.0        #U  - flow 
+      paramUz: 1.0       #Uz - hz 
+      paramC: 1.0        #C  - cam 
+      paramCz: 1.0       #Cz - camz 
+
+      kappa: 
+            [0.20,
+             0.20,
+             0.20 ]
+# param for msg_bias  
+msg_bias:
+      bias_imu: -9.794
+
+      # [UWB] to [UAV] 
+      bias_uwb: [ -0.03,  0.00,  0.03]
+      bias_d: -0.05
+      bias_cam: 
+            [  0.07,
+               -0.05,
+               0.05] 
+
+      bias_pos: 
+            [ 0.00,
+             -0.00,
+              0.00]
+
+      # [UAV] to [mark] 
+      bias_marker: 
+            [ 0.135,
+              0.00,
+              0.00 ]
+       # [UWB] to [ugv mark] 
+      bias_marker_ugv: 
+            [ 0.00,
+              0.00,
+              0.00 ]
+
+# param for msg_sensor
+msg_sensor:
+      uwbnum: 1        #uwb num - 1
+      camnum: 1        #cam num - 1
+      # [mark] to [MOCAP] 
+      # rostopic echo /uav201/mocap/pos
+      pos_uav_init: 
+            [-1.1530704498291016,
+             0.06863214075565338,
+             0.10663705319166183]
+              
+      # [UAV] to [UWB0] 
+      # rostopic echo /estimate/viconxt/pose
+      pos_uav2uwb01_init: 
+            [1.6817379093170166,
+             -1.3425226286053658,
+             -0.32480937987565994]
+
+###############################
+# 相机位姿标定定位参数-相对定位结果 #
+###############################
+cam_A: [
+0.0385246, 0.0956779, -0.150928, 
+-0.0119492, -0.0242074, 0.411034, 0.91122
+]

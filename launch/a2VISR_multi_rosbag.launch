@@ -1,0 +1,11 @@
+<launch>
+    <node pkg="a2VISR" type="a2VISR_multicam" name="a2VISR_multicam" output="screen">
+        <param name="dataType" type="string" value="rosbag" />
+        <rosparam command="load" file="$(find a2VISR)/param/a2VISR_param.yaml" />
+    </node>
+
+    <node  name="bag_player" pkg="rosbag" type="play" args="$(find a2VISR)/dataset_for_a2visr/bags/S1.bag" > 
+    </node>
+    
+</launch>
+

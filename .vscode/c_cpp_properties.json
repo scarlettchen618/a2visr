@@ -1,0 +1,39 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/scarlett/ws/lidar_ws/fastlio_ws/devel/include/**",
+        "/home/scarlett/ws/a2VISR_ws/devel/include/**",
+        "/home/scarlett/ws/lidar_ws/livox_ws/devel/include/**",
+        "/home/scarlett/ws/multicam_ws/devel/include/**",
+        "/home/scarlett/dwe_mutiachors_ws/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/scarlett/ws/a2VISR_ws/src/a2visr_est/include/**",
+        "/home/scarlett/ws/multicam_ws/src/apriltag_ros/apriltag_ros/include/**",
+        "/home/scarlett/dwe_mutiachors_ws/src/calibrate_base_to_origin/include/**",
+        "/home/scarlett/ws/a2VISR_ws/src/sribo-cam/include/**",
+        "/home/scarlett/dwe_mutiachors_ws/src/dwemulti_origin/include/**",
+        "/home/scarlett/dwe_mutiachors_ws/src/dwemulti/include/**",
+        "/home/scarlett/ws/lidar_ws/fastlio_ws/src/fast_lio2/include/**",
+        "/home/scarlett/dwe_mutiachors_ws/src/viconros/libmotioncapture/include/**",
+        "/home/scarlett/dwe_mutiachors_ws/src/viconros/libobjecttracker/include/**",
+        "/home/scarlett/ws/multicam_ws/src/multi_camera_cooperation/include/**",
+        "/home/scarlett/ws/multicam_ws/src/multicam_fusion/include/**",
+        "/home/scarlett/ws/a2VISR_ws/src/a2visr_offboard/include/**",
+        "/home/scarlett/dwe_mutiachors_ws/src/serial/include/**",
+        "/home/scarlett/dwe_mutiachors_ws/src/uavconfig/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

@@ -1,0 +1,12 @@
+<launch>
+    <node pkg="a2VISR" type="a2VISR_multicam" name="a2VISR_multicam" output="screen">
+        <param name="dataType" type="string" value="estimate" />
+        <rosparam command="load" file="$(find a2VISR)/param/a2VISR_param.yaml" />
+        
+        <!-- <remap from="/uav201/mocap/pos" to = "/vicon_UAV/CSJ01/pose"/>
+        <remap from="/uav201/mocap/odom" to = "/vicon_UAV/CSJ01/odom"/>
+        <remap from="/uwba0/mocap/pos" to = "/vicon_UAV/CSJ02/pose"/> -->
+
+    </node>
+    
+</launch>
