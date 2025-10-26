@@ -1,0 +1,18 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/scarlett/ws/a2VISR_ws/devel/lib/python3/dist-packages",
+        "/home/scarlett/ws/lidar_ws/fastlio_ws/devel/lib/python3/dist-packages",
+        "/home/scarlett/ws/lidar_ws/livox_ws/devel/lib/python3/dist-packages",
+        "/home/scarlett/ws/multicam_ws/devel/lib/python3/dist-packages",
+        "/home/scarlett/dwe_mutiachors_ws/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/scarlett/ws/a2VISR_ws/devel/lib/python3/dist-packages",
+        "/home/scarlett/ws/lidar_ws/fastlio_ws/devel/lib/python3/dist-packages",
+        "/home/scarlett/ws/lidar_ws/livox_ws/devel/lib/python3/dist-packages",
+        "/home/scarlett/ws/multicam_ws/devel/lib/python3/dist-packages",
+        "/home/scarlett/dwe_mutiachors_ws/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ]
+}

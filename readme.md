@@ -5,7 +5,7 @@ a2VISR for state estimation
 
 ## Download
 ```
-git clone https://gitee.com/scarlettchen/a2visr_est.git
+git clone https://github.com/scarlettchen618/a2visr.git
 cd ..
 catkin_make
 ```
